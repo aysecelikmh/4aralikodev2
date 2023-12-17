@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200;
+            height: 100vh;
+            background: linear-gradient(to top right,purple,green);
+            position: relative;
+        }
+
+        .box-container .box img{
+            width: 60px;
+            height: 60px;
+        }
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(3,0.7fr);
+            gap:10px;
+            margin-top: 100px;
+            position: absolute;
+            margin-left: 50px;
+        }
+        .box-container .box{
+            padding:30px 20px;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 30px;
+            background-color: white;
+            transition: transform 0.3s ease; 
+       
+            
+           
+
+        }
+
+        .box-container .box:hover{
+            transform: scale(1.1);
+
+        }
+
+
+        .box-container .box p{
+            font-size: 20px;
+        }
+
+        .button{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            display: inline-block;
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 8px 25px;
+            border-radius: 10px;
+           
+        }
+
+
+        .button:hover{
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <img src="./html5.png" alt="">
+                <h3>HTML 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+           
+
+            <div class="box">
+                <img src="./cssicon.png" alt="">
+                <h3>CSS 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="./javascript-logo-javascript-icon-transparent-free-png.webp" alt="">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="./saasicon.png" alt="">
+                <h3>SASS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="./jquery.png" alt="">
+                <h3>JQuery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="./react.png" alt="">
+                <h3>ReactJS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quod.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
